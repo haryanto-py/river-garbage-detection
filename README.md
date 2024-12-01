@@ -59,4 +59,5 @@ The output folder will contain annotated images/videos with detected waste.
    Open the files in the `data/output/` directory to visualize the detected waste and check the detection accuracy.
 
 > Note: If you encounter `ModuleNotFoundError: No module named 'distutils'`, install setuptools by using
-```bash pip install setuptools
+```bash
+pip install setuptools
