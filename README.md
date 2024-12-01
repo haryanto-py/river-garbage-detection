@@ -1,5 +1,10 @@
 # UAV-Based River Waste Monitoring System Using YOLOv8
 
+Input image               | Detection result
+:------------------------:|:------------------------:
+![ft1_citarum_0-copy-0](https://github.com/user-attachments/assets/610ac2bb-59c2-4a0b-b1f7-7868c7a71d2e) | ![ft1_citarum_0](https://github.com/user-attachments/assets/dd1653af-d784-4b7e-9bd8-01b7592c5e14)
+
+
 ## Project Overview
 
 The **UAV-Based River Waste Monitoring System** is a project that utilizes advanced computer vision techniques to detect waste in rivers using images or videos captured by Unmanned Aerial Vehicles (UAVs). By leveraging the YOLOv8 object detection model, this system can identify and classify various types of trash, providing a scalable solution for environmental monitoring. The project is designed to be run on a local PC, making it accessible and easy to set up for researchers, students, and conservationists.
