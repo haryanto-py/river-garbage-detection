@@ -9,7 +9,7 @@ The **UAV-Based River Waste Monitoring System** is a project that utilizes advan
 The purpose of this project is to:
 
 1. Utilize UAV-captured imagery for environmental monitoring.
-2. Detect and classify waste in river systems to aid in cleanup efforts.
+2. Detect and classify waste in river systems to aid cleanup efforts.
 3. Provide a simple, local PC-based workflow for running the waste detection system.
 4. Encourage the use of machine learning for environmental conservation initiatives.
 
@@ -28,10 +28,12 @@ The purpose of this project is to:
    ```bash
    git clone https://github.com/your-repo-name/UAV-River-Waste-Monitoring.git
    cd UAV-River-Waste-Monitoring
+   
 2. **Install Dependencies**  
    Install the necessary Python packages by running:
    ```bash
    pip install -r requirements.txt
+   
 3. **Download the Pre-trained Model**
     Obtain the pre-trained YOLOv8 model file (yolov8_river_waste.pt) from the provided link and save it in the models/ directory.
 
@@ -40,3 +42,13 @@ Copy the images or videos captured by UAVs into the data/input/ folder. Ensure t
 
 5. **Run the Detection Script**
 Execute the detection script to process the input data:
+   ```bash
+   python detect.py --source data/input/ --model models/yolov8_river_waste.pt --output data/output/
+
+- `--source`   : Path to the input folder containing images/videos.
+- `--model`    : Path to the pre-trained YOLOv8 model.
+- `--output`   : Path to save the results.
+The output folder will contain annotated images/videos with detected waste.
+
+6. **Review the result**
+   Open the files in the `data/output/` directory to visualize the detected waste and check the detection accuracy.
